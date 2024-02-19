@@ -8,40 +8,105 @@
   </head>
   <body>
     <form>
-      <label for="firstname"></label>
-      <input type="text" id="firstname" name="Prénom" value="Prénom" />
-      <label for="lastname"></label>
-      <input type="text" id="lastname" name="Nom" value="Nom" />
-      <br />
-      <label>
-        <input type="radio" name="langage" value="Français" /> Français
-      </label>
-      <label>
-        <input type="radio" name="langage" value="Allemand" /> Allemand
-      </label>
-      <label>
-        <input type="radio" name="langage" value="Italien" /> Italien
-      </label>
-      <br />
-      <label>
-        <input type="checkbox" name="newsletter" /> S'abonner à la newsletter
-        <input type="checkbox" name="conditions" /> J'accepte les conditions
-        générales
-      </label>
-      <br />
-      <label for="Country">Pays</label>
-      <select name="country" id="country">
-        <option value="CH">Suisse</option>
-        <option value="DE">Allemagne</option>
-        <option value="IT">Italie</option>
-      </select>
-      <br />
-      <label for="remarque">Remarque</label>
-      <textarea name="remarque" id="remarque" cols="30" rows="5"></textarea>
+      <div class="group">
+        <label for="firstname"></label>
+        <input type="text" id="firstname" name="Prénom" value="Prénom" />
+        <label for="lastname"></label>
+        <input type="text" id="lastname" name="Nom" value="Nom" />
+      </div>
+      <div class="group">
+        <div class="langues">
+          <label>
+            <input type="radio" name="langage" value="Français" /> Français
+          </label>
+        </div>
+        <div class="langues">
+          <label>
+            <input type="radio" name="langage" value="Allemand" /> Allemand
+          </label>
+        </div>
+        <div class="langues">
+          <label>
+            <input type="radio" name="langage" value="Italien" /> Italien
+          </label>
+        </div>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="newsletter" /> S'abonner à la newsletter
+        </label>
+      </div>
+      <div class="checkbox">
+        <div class="conditions">
+          <label>
+            <input type="checkbox" name="conditions" /> J'accepte les conditions
+            générales
+          </label>
+        </div>
+      </div>
+      <div class="group">
+        <label for="Country">Pays</label>
+        <select name="country" id="country">
+          <option value="CH">Suisse</option>
+          <option value="DE">Allemagne</option>
+          <option value="IT">Italie</option>
+        </select>
+      </div>
+      <div class="group">
+        <label for="remarque">Remarque</label>
+        <textarea name="remarque" id="remarque" cols="30" rows="5"></textarea>
+      </div>
     </form>
-    <form>
-      <label> </label>
-    </form>
+    <div class="formulaire2">
+      <form>
+        <div class="group">
+          <label for="firstname">
+            <input type="text" id="firstname" name="Prénom" value="Prénom" />
+          </label>
+          <label for="lastname">
+            <input type="text" id="lastname" name="Nom" value="Nom" />
+          </label>
+        </div>
+        <div class="group">
+          <div class="langue">
+            <label for="langage">
+              <input type="radio" name="langage" value="Français" /> Français
+            </label>
+          </div>
+          <div class="langue">
+            <label for="langage">
+              <input type="radio" name="langage" value="Allemand" /> Allemand
+            </label>
+          </div>
+          <div class="langue">
+            <label for="langage">
+              <input type="radio" name="langage" value="Italien" /> Italien
+            </label>
+          </div>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="newsletter" /> S'abonner à la newsletter
+        </div>
+        <div class="checkbox">
+          <div class="conditions">
+            <input type="checkbox" name="conditions" /> j'accepte les conditions
+            générales
+          </div>
+        </div>
+        <div class="group">
+          <label for="country">Pays</label>
+          <select name="country" id="country">
+            <option value="CH">Suisse</option>
+            <option value="DE">Allemagne</option>
+            <option value="IT">Italie</option>
+          </select>
+        </div>
+        <div class="group">
+          <label for="remarque">Remarque</label>
+          <textarea name="remarque" id="remarque" cols="30" rows="5"></textarea>
+        </div>
+      </form>
+    </div>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

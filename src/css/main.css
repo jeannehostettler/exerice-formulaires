@@ -43,8 +43,16 @@ video {
 // base rules
 // ==================================== */
 
-input {
-  margin-bottom: 35px;
+.group {
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  display: block;
+}
+
+.conditions {
+  margin-bottom: 30px;
 }
 
 textarea {
@@ -53,4 +61,8 @@ textarea {
 
 form {
   margin-left: 20px;
+}
+
+.formulaire2 {
+  background-color: #303245;
 }
