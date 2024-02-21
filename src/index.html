@@ -9,10 +9,12 @@
   <body>
     <form>
       <div class="group">
-        <label for="firstname"></label>
-        <input type="text" id="firstname" name="Prénom" value="Prénom" />
-        <label for="lastname"></label>
-        <input type="text" id="lastname" name="Nom" value="Nom" />
+        <div class="name">
+          <label for="firstname"></label>
+          <input type="text" id="firstname" name="Prénom" value="Prénom" />
+          <label for="lastname"></label>
+          <input type="text" id="lastname" name="Nom" value="Nom" />
+        </div>
       </div>
       <div class="group">
         <div class="langues">
@@ -94,7 +96,7 @@
           </div>
         </div>
         <div class="group">
-          <label for="country">Pays</label>
+          <label for="country"></label>
           <select name="country" id="country">
             <option value="CH">Suisse</option>
             <option value="DE">Allemagne</option>
@@ -105,6 +107,7 @@
           <label for="remarque">Remarque</label>
           <textarea name="remarque" id="remarque" cols="30" rows="5"></textarea>
         </div>
+        <button type="submit">Envoyer</button>
       </form>
     </div>
     <script src="js/main.js" type="module"></script>
