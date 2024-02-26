@@ -108,6 +108,11 @@ button {
   width: 100%;
 }
 
+.informations {
+  display: flex;
+  margin-top: 30px;
+}
+
 .radio-placeholder {
   display: inline-block; /* pour que le div soit à côté du texte */
   width: 16px;
@@ -141,30 +146,46 @@ input:checked + .radio-placeholder div {
 
 .switch-wrapper {
   display: inline-block;
-  width: 30px;
+  width: 35px;
   height: 14px;
-  border-radius: 10px;
-  background: orange;
+  border-radius: 7px;
+  background: #f4433580;
 }
 
 .switch-inner {
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  background: red;
-  margin-top: -3px;
+  background: #f44335;
+  margin-top: -3.5px;
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.switch-inner:hover {
+  box-shadow: 0px 0px 0px 7px rgba(244, 67, 53, 0.16);
+  transition: box-shadow 0.2s;
 }
 
 input:checked + .switch-wrapper .switch-inner {
-  margin-left: 10px;
+  margin-left: 18px;
 }
 
 .switch input {
   display: none;
 }
 
+.switch-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.switch {
+  margin-bottom: 13px;
+}
+
 .textfield {
   position: relative;
+  margin-right: 10px;
 }
 
 .textfield input {
@@ -183,5 +204,5 @@ input:checked + .switch-wrapper .switch-inner {
 }
 
 input:focus + label {
-  transform: translateY(-24px) scale(0.7);
+  transform: translateY(-24px) scale(0.8);
 }
