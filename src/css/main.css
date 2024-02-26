@@ -113,11 +113,26 @@ button {
   width: 16px;
   height: 16px;
   border-radius: 8px;
-  background: orange;
+  border: red 1px solid;
 }
 
-input:checked + .radio-placeholder {
-  background: red;
+.radio-placeholder:hover {
+  box-shadow: 0px 0px 0px 7px rgba(244, 67, 53, 0.16);
+  transition: box-shadow 0.2s;
+}
+
+.radio-placeholder div {
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  margin: 2px;
+  transform: scale(0);
+  transition: transform 0.2s;
+}
+
+input:checked + .radio-placeholder div {
+  transform: scale(1);
 }
 
 .radio input {
@@ -127,17 +142,17 @@ input:checked + .radio-placeholder {
 .switch-wrapper {
   display: inline-block;
   width: 30px;
-  height: 20px;
-  padding: 2px;
+  height: 14px;
   border-radius: 10px;
   background: orange;
 }
 
 .switch-inner {
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   background: red;
+  margin-top: -3px;
 }
 
 input:checked + .switch-wrapper .switch-inner {
@@ -146,4 +161,27 @@ input:checked + .switch-wrapper .switch-inner {
 
 .switch input {
   display: none;
+}
+
+.textfield {
+  position: relative;
+}
+
+.textfield input {
+  padding: 16px;
+}
+
+.textfield label {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  pointer-events: none; /* on empêche le click sur le label, pour ne pas empêcher la sélection de l'input */
+  background: white; /* on ajoute une couleur de fond, pour cacher la bordure de l'input */
+  transition: transform 0.3s; /* on ajoute une transition */
+  transform-origin: left; /* on commence la transformation à gauche, pour que le label reste bien à gauche */
+  padding: 2px;
+}
+
+input:focus + label {
+  transform: translateY(-24px) scale(0.7);
 }
